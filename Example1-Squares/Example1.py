@@ -1,14 +1,14 @@
 # ***********************************************************************************
-#   ExibePoligonos.py
-#       Autor: Márcio Sarroglia Pinho
-#       pinho@pucrs.br
-#   Este programa exibe um polígono em OpenGL
+#   Example2.py
+#       Autor: Estêvão Smania Testa (baseado no código de Márcio Sarroglia Pinho)
+#
+#   Este programa exibe polígonos em OpenGL e permite movelos
+#
 #   Para construir este programa, foi utilizada a biblioteca PyOpenGL, disponível em
 #   http://pyopengl.sourceforge.net/documentation/index.html
 #
 #   Sugere-se consultar também as páginas listadas
 #   a seguir:
-#   http://bazaar.launchpad.net/~mcfletch/pyopengl-demo/trunk/view/head:/PyOpenGL-Demo/NeHe/lesson1.py
 #   http://pyopengl.sourceforge.net/documentation/manual-3.0/index.html#GLUT
 #
 #   No caso de usar no MacOS, pode ser necessário alterar o arquivo ctypesloader.py,

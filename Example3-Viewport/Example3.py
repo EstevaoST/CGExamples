@@ -1,14 +1,14 @@
 # ***********************************************************************************
-#   ExibePoligonos.py
-#       Autor: Márcio Sarroglia Pinho
-#       pinho@pucrs.br
-#   Este programa exibe um polígono em OpenGL
+#   Example3.py
+#       Autor: Estêvão Smania Testa (baseado no código de Márcio Sarroglia Pinho)
+#
+#   Este programa exibe polígonos em OpenGL e permite mover a janela de visualização
+#
 #   Para construir este programa, foi utilizada a biblioteca PyOpenGL, disponível em
 #   http://pyopengl.sourceforge.net/documentation/index.html
 #
 #   Sugere-se consultar também as páginas listadas
 #   a seguir:
-#   http://bazaar.launchpad.net/~mcfletch/pyopengl-demo/trunk/view/head:/PyOpenGL-Demo/NeHe/lesson1.py
 #   http://pyopengl.sourceforge.net/documentation/manual-3.0/index.html#GLUT
 #
 #   No caso de usar no MacOS, pode ser necessário alterar o arquivo ctypesloader.py,
@@ -40,10 +40,10 @@ def square(x,y, w,h):
 
 def reshape(w: int, h: int):
     global vpX, vpY
-    glViewport(vpX, vpY, 200, 200)
+    glViewport(0, 0, 200, 200)
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
-    glOrtho(0.0, 500, 0.0, 500, 0.0, 1.0)
+    glOrtho(vpX, vpX+500, vpY, vpY+500, 0.0, 1.0)
     glMatrixMode (GL_MODELVIEW)
     glLoadIdentity()
 
